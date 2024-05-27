@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
  * @author Javen
  */
 @Component
-@PropertySource("classpath:/unionpay.properties")
+@PropertySource(value = "classpath:/unionpay.properties",ignoreResourceNotFound = true)
 @ConfigurationProperties(prefix = "union")
 public class UnionPayBean {
 	private String machId;

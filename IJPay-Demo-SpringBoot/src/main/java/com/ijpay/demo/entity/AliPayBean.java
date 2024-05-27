@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
  * @author Javen
  */
 @Component
-@PropertySource("classpath:/alipay.properties")
+@PropertySource(value = "classpath:/alipay.properties",ignoreResourceNotFound = true)
 @ConfigurationProperties(prefix = "alipay")
 public class AliPayBean {
 	private String appId;

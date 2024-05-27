@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
  * @author Javen
  */
 @Component
-@PropertySource("classpath:/jdpay.properties")
+@PropertySource(value = "classpath:/jdpay.properties",ignoreResourceNotFound = true)
 @ConfigurationProperties(prefix = "jdpay")
 public class JdPayBean {
 	private String mchId;

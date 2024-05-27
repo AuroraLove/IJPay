@@ -4,11 +4,11 @@ import com.ijpay.alipay.AliPayApiConfig;
 import com.ijpay.alipay.AliPayApiConfigKit;
 import com.ijpay.alipay.starter.constants.IJPayConstant;
 import com.ijpay.alipay.starter.properties.AliPayProperties;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.annotation.Resource;
 
 
 /**

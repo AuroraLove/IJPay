@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
  * @author Javen
  */
 @Component
-@PropertySource("classpath:/wxpay.properties")
+@PropertySource(value = "classpath:/wxpay.properties",ignoreResourceNotFound = true)
 @ConfigurationProperties(prefix = "wxpay")
 public class WxPayBean {
 	private String appId;

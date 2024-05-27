@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
  * @author Javen
  */
 @Component
-@PropertySource("classpath:/paypal.properties")
+@PropertySource(value = "classpath:/paypal.properties",ignoreResourceNotFound = true)
 @ConfigurationProperties(prefix = "paypal")
 public class PayPalBean {
 	private String clientId;
